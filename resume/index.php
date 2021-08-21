@@ -150,7 +150,7 @@
           <h2 class="section-title">Profile</h2>
 
           <p class="profile_description">I am a multi-talented logical thinker of solutions. I am very inspired to learn
-            and I have a very good understanding of many technical subjects. I am an avid open source developer. I love to be creative and inventive.</p>
+            and I have a very good understanding of many technical subjects. I love to be creative and inventive.</p>
         </section>
 
         <!--========== EDUCATION ==========-->
@@ -285,7 +285,7 @@
 
             <div class="certificate__content">
               <h3 class="certificate__title">Online store</h3>
-              <p class="certificate__description">Built a market place program that uses mySQL to store user’s data and allows user to login add products and delete products and also view other users products</p>
+              <p class="certificate__description">Built a market place program that uses SQL to store user’s data and allows user to login add products and delete products and also view other users products</p>
               <a href="https://mag-shop.herokuapp.com/" target="_blank" class="social__link">
                 <i class='bx bx-link bx-md' ></i> mag-shop.herokuapp.com
               </a>
