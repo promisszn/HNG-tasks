@@ -29,179 +29,324 @@
 ?>
 
 <!DOCTYPE html>
-<html>
-<title>MY RESUME</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
-</style>
-<body class="w3-light-grey">
+<html lang="en">
 
-<!-- Page Container -->
-<div class="w3-content w3-margin-top" style="max-width:1400px;">
+<head>
+  <title>MY RESUME</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- The Grid -->
-  <div class="w3-row-padding">
-  
-    <!-- Left Column -->
-    <div class="w3-third">
-    
-      <div class="w3-white w3-text-grey w3-card-4">
-        <div class="w3-display-container">
-          <img src="./assets/hng.png" style="width:100%" alt="HNG">
-          <div class="w3-display-bottomleft w3-container w3-text-white">
-            <h2>OLAYINKA PROMISE</h2>
+  <!--========== BOX ICONS ==========-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+  <!--========== CSS ==========-->
+  <link rel="stylesheet" href="assets/css/styles.css">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.ico" rel="icon">
+</head>
+
+<body>
+  <!--========== HEADER ==========-->
+  <header class="l-header" id="header">
+    <nav class="nav bd-container">
+      <a href="#" class="nav__logo">Promise</a>
+
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#home" class="nav__link active-link">
+              <i class="bx bx-home nav__icon"></i>Home
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#profile" class="nav__link">
+              <i class="bx bx-user nav__icon"></i>Profile
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#education" class="nav__link">
+              <i class="bx bx-book nav__icon"></i>Education
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#skills" class="nav__link">
+              <i class="bx bx-receipt nav__icon"></i>Skills
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#experience" class="nav__link">
+              <i class="bx bx-briefcase-alt nav__icon"></i>Experience
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#certificates" class="nav__link">
+              <i class="bx bx-award nav__icon"></i>Projects
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#references" class="nav__link">
+              <i class="bx bx-link-external nav__icon"></i>Contact
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="nav__toggle" id="nav-toggle">
+        <i class="bx bx-grid-alt"></i>
+      </div>
+    </nav>
+  </header>
+
+  <main class="l-main bd-container">
+    <div class="resume" id="area-cv">
+      <div class="resume__left">
+        <!--========== HOME ==========-->
+        <section class="home" id="home">
+          <div class="home__container section bd-grid">
+            <div class="home__data bd-grid">
+              <img src="assets/img/hng.png" alt="" class="home__img">
+
+              <h1 class="home__title">PROMISE <b>OLAYINKA</b></h1>
+              <h3 class="home__profession">Web developer</h3>
+            </div>
+
+            <div class="home__address bd-grid">
+              <span class="home__information">
+                <i class="bx bx-map home__icon"></i> Lagos, Nigeria
+              </span>
+              <span class="home__information">
+                <i class="bx bx-envelope home__icon"></i> olayinkapromise80@gmail.com
+              </span>
+              <span class="home__information">
+                <i class="bx bx-phone home__icon"></i> 08079529279
+              </span>
+            </div>
           </div>
-        </div>
-        <div class="w3-container">
-          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Software Developer</p>
-          <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>Lagos, Nigeria</p>
-          <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>olayinkapromise80@gmail.com</p>
-          <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>08079529279</p>
-          <hr>
 
-          <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Programming Skills</b></p>
-          <p>PHP</p>
-          <p>Laravel</p>
-          <p>HTML, CSS, JavaScript</p>
-          
-          <br>
+          <!-- Theme change button -->
+          <i class="bx bx-moon change-theme" title="Theme" id="theme-button"></i>
+        </section>
 
-          <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-teal"></i>Projects</b></p>
-          <p>A simple todo list app</p>
-          <div class="w3-light-grey w3-square-xlarge">
-            <a href="http://to-d-app.herokuapp.com/" target="_blank">Link here</a>
+        <!--========== SOCIAL ==========-->
+        <section class="social section">
+          <h2 class="section-title">SOCIAL</h2>
+
+          <div class="social__container bd-grid">
+            <a href="#" target="_blank" class="social__link">
+              <i class="bx bxl-linkedin-square social__icon"></i> @promiseola
+            </a>
+            <a href="#" target="_blank" class="social__link">
+              <i class="bx bxl-facebook social__icon"></i> Olayinka
+            </a>
+            <a href="#" target="_blank" class="social__link">
+              <i class="bx bxl-instagram social__icon"></i> @promisszn
+            </a>
           </div>
-          <p>A simple webstore where users login and add products</p>
-          <div class="w3-light-grey w3-square-xlarge">
-          <a href="https://mag-shop.herokuapp.com/" target="_blank">Link here</a>
-          </div>
-          <br>
-        </div>
-      </div><br>
+        </section>
 
-    <!-- End Left Column -->
+        <!--========== PROFILE ==========-->
+        <section class="profile section" id="profile">
+          <h2 class="section-title">Profile</h2>
+
+          <p class="profile_description">I am a multi-talented logical thinker of solutions. I am very inspired to learn
+            and I have a very good understanding of many technical subjects. I am an avid open source developer. I love to be creative and inventive.</p>
+        </section>
+
+        <!--========== EDUCATION ==========-->
+        <section class="education section" id="education">
+          <h2 class="section-title">Education</h2>
+
+          <div class="education__container bd-grid">
+            <div class="education__content">
+              <div class="education__time">
+                <span class="education__rounder"></span>
+                <span class="education__line"></span>
+              </div>
+
+              <div class="education__data bd-grid">
+                <h3 class="education__title">Bsc. Surveying and Geoinformatics</h3>
+                <span class="education__studies">University of Lagos</span>
+                <span class="eduation__year">09/2018 - Present</span>
+              </div>
+            </div>
+
+            <div class="education__content">
+              <div class="education__time">
+                <span class="education__rounder"></span>
+                <span class="education__line"></span>
+              </div>
+
+              <div class="education__data bd-grid">
+                <h3 class="education__title">Web Development Masterclass-Complete Certification Course</h3>
+                <span class="education__studies">YouAccel via Udemy Online Learning Platform</span>
+                <span class="eduation__year">07/2021 - 08/2021</span>
+              </div>
+            </div>
+
+            <div class="education__content">
+              <div class="education__time">
+                <span class="education__rounder"></span>
+                <!-- <span class="education__line"></span> -->
+              </div>
+
+              <div class="education__data bd-grid">
+                <h3 class="education__title">Git and Github</h3>
+                <span class="education__studies">Udemy Online learning Platform</span>
+                <span class="eduation__year">07/2021-08/2021</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+        <!--========== SKILLS  ==========-->
+        <section class="skills section" id="skills">
+          <h2 class="section-title">Programming Skills</h2>
+
+          <div class="skills__content bd-grid">
+            <ul class="skills__data">
+              <li class="skills__name">
+                <span class="skills__circle"></span> Html
+              </li>
+              <li class="skills__name">
+                <span class="skills__circle"></span> Css
+              </li>
+              <li class="skills__name">
+                <span class="skills__circle"></span> Javascript
+              </li>
+              <li class="skills__name">
+                <span class="skills__circle"></span> Version Control(Git & Github)
+              </li>
+            </ul>
+
+            <ul class="skills__data">
+              <li class="skills__name">
+                <span class="skills__circle"></span> Php
+              </li>
+              <li class="skills__name">
+                <span class="skills__circle"></span> Laravel
+              </li>
+              <li class="skills__name">
+                <span class="skills__circle"></span> SQL
+              </li>
+            </ul>
+          </div>
+        </section>
+
+      </div>
+
+      <div class="resume__right">
+        <!--========== EXPERIENCE ==========-->
+        <section class="experience section" id="experience">
+          <h2 class="section-title">Experience</h2>
+
+          <div class="experience__container bd-grid">
+            <div class="experience__content">
+              <div class="experience__time">
+                <span class="experience__rounder"></span>
+                <span class="experience__line"></span>
+              </div>
+
+              <div class="experience__data bd-grid">
+                <h3 class="experience__title">INTERN</h3>
+                <span class="experience__company">08/2021 - Present | HNG INTERNSHIP</span>
+                <p class="experience__description"></p>
+              </div>
+            </div>
+
+            <div class="experience__content">
+              <div class="experience__time">
+                <span class="experience__rounder"></span>
+                <!-- <span class="experience__line"></span> -->
+              </div>
+
+              <div class="experience__data bd-grid">
+                <h3 class="experience__title">INTERN</h3>
+                <span class="experience__company">05/2021 -  08/2021 | Side Hustle</span>
+                <p class="experience__description">Completed all tasks given successfully and also built basic functional applications and troubleshooted and solved complex problems and also designed and implemented database storage solutions to store user data. Finishing the backend track with perfect scores also recieving a certificate of completion of the internship</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!--========== CERTIFICATES ==========-->
+        <section class="certificate section" id="certificates">
+          <h2 class="section-title">Projects</h2>
+
+          <div class="certificate__container bd-grid">
+            <div class="certificate__content">
+              <h3 class="certificate__title">Todo List</h3>
+              <p class="certificate__description">Created a todo list program that user's data using SQL and allows user to create, update and delete entries</p>
+              <a href="http://to-d-app.herokuapp.com/" target="_blank" class="social__link">
+                <i class='bx bx-link bx-md' ></i> to-d-app.herokuapp.com
+              </a>
+            </div>
+
+            <div class="certificate__content">
+              <h3 class="certificate__title">Online store</h3>
+              <p class="certificate__description">Built a market place program that uses mySQL to store user’s data and allows user to login add products and delete products and also view other users products</p>
+              <a href="https://mag-shop.herokuapp.com/" target="_blank" class="social__link">
+                <i class='bx bx-link bx-md' ></i> mag-shop.herokuapp.com
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <!--========== References ==========-->
+        <section class="references section" id="references">
+          <h2 class="section-title cen">Contact Me</h2>
+
+          <div class="references__container bd-grid">
+            <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']) ?>" method="POST" class="bd-grid">
+              <div class="reference__content bd-grid">
+                <i class='bx bxs-contact bx-md'></i><?php echo $errors['first']?? '' ?>
+                <input class="" name="first" type="text" placeholder="First Name">
+              </div>
+              <div class="reference__content bd-grid">
+                <i class='bx bxs-contact bx-md'></i><?php echo $errors['last']?? '' ?>
+                <input class="" name="last" type="text" placeholder="Last Name">
+              </div>
+              <div class="reference__content bd-grid">
+                <i class='bx bx-mail-send bx-md'></i><?php echo $errors['email']?? '' ?>
+                <input class="" name="email" type="text" placeholder="Email">
+              </div>
+              <div class="reference__content bd-grid">
+                <i class="bx bx-phone bx-md"></i><?php echo $errors['phone']?? '' ?>
+                <input class="" name="phone" type="text" placeholder="Phone">
+              </div>
+              <div class="reference__content bd-grid">
+                <i class='bx bxs-message bx-md'></i><?php echo $errors['message']?? '' ?>
+                <textarea class="" cols="30" rows="10" name="message" type="text" placeholder="Please enter your message here"></textarea>
+              </div>
+              <button class="home__button-mobile" name="submit">Send</button>
+            </form>
+          </div>
+        </section>
+
+        <!--========== LANGUAGES ==========-->
+        <section class="languages section">
+
+        </section>
+
+        <!--========== INTERESTS ==========-->
+        <section class="interests section">
+
+        </section>
+      </div>
     </div>
+  </main>
 
-    <!-- Right Column -->
-    <div class="w3-twothird">
-    
-      <div class="w3-container w3-card w3-white w3-margin-bottom">
-        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Work Experience</h2>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Intern(Backend Track)/HNG INTERNSHIPS</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Aug 2021 - <span class="w3-tag w3-teal w3-round">Current</span></h6>
-          <p></p>
-          <hr>
-        </div>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Intern(Backend Track)/ SIDE HUSTLE NG</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>May 2021 - Aug 2021</h6>
-          <p><ul>
-            <li>Completed all tasks given successfully</li>
-            <li>Built a simple todo list app</li>
-            <li>Created a web store where user can login and add products</li>
-          </ul></p>
-          <hr>
-        </div>
-      </div>
+  <!--========== SCROLL TOP ==========-->
+  <a href="#" class="scrolltop" id="scroll-top">
+    <i class='bx bx-up-arrow-alt scrolltop__icon'></i>
+  </a>
 
-      <div class="w3-container w3-card w3-white">
-        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Education</h2>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>W3Schools.com</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Forever</h6>
-          <p>Web Development! All I need to know in one place</p>
-          <hr>
-        </div>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>University of Lagos</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2018 - <span class="w3-tag w3-teal w3-round">Current</span></h6>
-          <p>Bsc. Surveying and Geoinformatics</p>
-          <hr>
-        </div>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>YouAccel via Udemy Online Learning Platform</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jun 2021 - Aug 2021</h6>
-          <p>Web Development Masterclass-Complete Certification Course</p><br>
-        </div>
-      </div>
+  <!--========== HTML2PDF ==========-->
+  <script src="assets/js/html2pdf.bundle.min.js"></script>
 
-    <!-- End Right Column -->
-    </div>
-    
-  <!-- End Grid -->
-  </div>
- 
-  <div class="w3-row">
-  <div class="w3-col">
-    <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']) ?>" class="w3-container w3-card-4 w3-light-grey w3-text-teal w3-margin w3-padding-16 w3-center" method="POST">
-      <h2 class="w3-center">Contact Me</h2>
-
-      <div class="w3-col" style="width:20%;">.</div>
-      <div class="w3-col" style="width:80%;">
-      <div class="w3-row w3-sectiom w3-padding">
-        <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-user"></i></div>
-        <span class="error"><?php echo $errors['first']?? '' ?></span>
-          <div class="w3-twothird">
-            <input class="w3-input w3-border" name="first" type="text" placeholder="First Name">
-          </div>
-      </div>
-
-      <div class="w3-row w3-section w3-padding">
-        <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-user"></i></div>
-        <span class="error"><?php echo $errors['last']?? '' ?></span>
-        <div class="w3-twothird">
-            <input class="w3-input w3-border" name="last" type="text" placeholder="Last Name">
-          </div>
-      </div>
-
-      <div class="w3-row w3-section w3-padding">
-        <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-envelope-o"></i></div>
-        <span class="error"><?php echo $errors['email']?? '' ?></span>
-        <div class="w3-twothird">
-            <input class="w3-input w3-border" name="email" type="text" placeholder="Email">
-          </div>
-      </div>
-
-      <div class="w3-row w3-section w3-padding">
-        <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-phone"></i></div>
-        <span class="error"><?php echo $errors['phone']?? '' ?></span>
-        <div class="w3-twothird">
-            <input class="w3-input w3-border" name="phone" type="text" placeholder="Phone">
-          </div>
-      </div>
-
-      <div class="w3-row w3-section w3-padding">
-        <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-pencil"></i></div>
-        <span class="error"><?php echo $errors['message']?? '' ?></span>
-        <div class="w3-twothird">
-            <textarea class="w3-input w3-border" cols="30" rows="10" name="message" type="text" placeholder="Please enter your message here"></textarea>
-          </div>
-      </div>
-      </div>
-      
-      <button class="w3-button w3-center w3-xlarge w3-section w3-teal w3-ripple w3-padding" name="submit">Send</button>
-    </form>
-   
-  </div>
-  </div>
-  
-  
-  <!-- End Page Container -->
-</div>
-
-<footer class="w3-container w3-teal w3-center w3-margin-top">
-  <p>Find me on social media.</p>
-  <i class="fa fa-facebook-official w3-hover-opacity"></i>
-  <i class="fa fa-instagram w3-hover-opacity"></i>
-  <i class="fa fa-twitter w3-hover-opacity"></i>
-  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
-</footer>
-
+  <!--========== MAIN JS ==========-->
+  <script src="assets/js/main.js"></script>
 </body>
+
 </html>
