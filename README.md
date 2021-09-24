@@ -1,3 +1,2 @@
-# HNG-tasks
-# A program that prints name
-# My resume page
+# LINK TO MY HOSTED SITE
+https://myresume-page.herokuapp.com/
