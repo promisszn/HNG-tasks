@@ -1,2 +1,3 @@
-# LINK TO MY HOSTED SITE
-https://myresume-page.herokuapp.com/
+
+#Link to my site 
+https://promisszn.github.io/resume/
